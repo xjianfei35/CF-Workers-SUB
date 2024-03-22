@@ -1,7 +1,7 @@
 
 // 部署完成后在网址后面加上这个，获取自建节点和机场聚合节点，/?token=auto或/auto或
 
-let mytoken = 'auto'; //可以随便取，或者uuid生成，https://1024tools.com/uuid
+let mytoken = 'feiyong'; //可以随便取，或者uuid生成，https://1024tools.com/uuid
 let BotToken =''; //可以为空，或者@BotFather中输入/start，/newbot，并关注机器人
 let ChatID =''; //可以为空，或者@userinfobot中获取，/start
 let TG = 0; //1 为推送所有的访问信息，0 为不推送订阅转换后端的访问信息与异常访问
@@ -11,6 +11,18 @@ let SUBUpdateTime = 6; //自定义订阅更新时间，单位小时
 const MainData = `
 vless://b7a392e2-4ef0-4496-90bc-1c37bb234904@cf.090227.xyz:443?encryption=none&security=tls&sni=edgetunnel-2z2.pages.dev&fp=random&type=ws&host=edgetunnel-2z2.pages.dev&path=%2F%3Fed%3D2048#%E5%8A%A0%E5%85%A5%E6%88%91%E7%9A%84%E9%A2%91%E9%81%93t.me%2FCMLiussss%E8%A7%A3%E9%94%81%E6%9B%B4%E5%A4%9A%E4%BC%98%E9%80%89%E8%8A%82%E7%82%B9
 vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIuWKoOWFpeaIkeeahOmikemBk3QubWUvQ01MaXVzc3Nz6Kej6ZSB5pu05aSa5LyY6YCJ6IqC54K5PuiLseWbvSDlgKvmlabph5Hono3ln44iLA0KICAiYWRkIjogImNmLjA5MDIyNy54eXoiLA0KICAicG9ydCI6ICI4NDQzIiwNCiAgImlkIjogIjAzZmNjNjE4LWI5M2QtNjc5Ni02YWVkLThhMzhjOTc1ZDU4MSIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAicHBmdjJ0bDl2ZW9qZC1tYWlsbGF6eS5wYWdlcy5kZXYiLA0KICAicGF0aCI6ICIvamFkZXIuZnVuOjQ0My9saW5rdndzIiwNCiAgInRscyI6ICJ0bHMiLA0KICAic25pIjogInBwZnYydGw5dmVvamQtbWFpbGxhenkucGFnZXMuZGV2IiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogIiINCn0=
+vless://90cd4a77-141a-43c9-991b-08263cfe9c10@cf.090227.xyz:443?encryption=none&security=tls&sni=vless1.naszx.xyz&fp=random&type=ws&host=vless1.naszx.xyz&path=%2FproxyIP%3Dproxyip.us.fxxk.dedyn.io#%E5%8A%A0%E5%85%A5%E6%88%91%E7%9A%84%E9%A2%91%E9%81%93t.me%2FCMLiussss%E8%A7%A3%E9%94%81%E6%9B%B4%E5%A4%9A%E4%BC%98%E9%80%89%E8%8A%82%E7%82%B9
+vless://90cd4a77-141a-43c9-991b-08263cfe9c10@193.122.125.174:2053?encryption=none&security=tls&sni=vless1.naszx.xyz&fp=random&type=ws&host=vless1.naszx.xyz&path=%2FproxyIP%3Dproxyip.kr.fxxk.dedyn.io#KR
+vless://90cd4a77-141a-43c9-991b-08263cfe9c10@192.9.177.204:443?encryption=none&security=tls&sni=vless1.naszx.xyz&fp=random&type=ws&host=vless1.naszx.xyz&path=%2FproxyIP%3Dproxyip.fxxk.dedyn.io#AU
+vless://90cd4a77-141a-43c9-991b-08263cfe9c10@216.24.189.68:42031?encryption=none&security=tls&sni=vless1.naszx.xyz&fp=random&type=ws&host=vless1.naszx.xyz&path=%2FproxyIP%3Dproxyip.us.fxxk.dedyn.io#US
+vless://90cd4a77-141a-43c9-991b-08263cfe9c10@8.217.248.220:2083?encryption=none&security=tls&sni=vless1.naszx.xyz&fp=random&type=ws&host=vless1.naszx.xyz&path=%2FproxyIP%3Dproxyip.aliyun.fxxk.dedyn.io#HK
+vless://90cd4a77-141a-43c9-991b-08263cfe9c10@45.133.247.214:443?encryption=none&security=tls&sni=vless1.naszx.xyz&fp=random&type=ws&host=vless1.naszx.xyz&path=%2FproxyIP%3Dproxyip.fxxk.dedyn.io#CT
+vless://90cd4a77-141a-43c9-991b-08263cfe9c10@192.65.217.18:443?encryption=none&security=tls&sni=vless1.naszx.xyz&fp=random&type=ws&host=vless1.naszx.xyz&path=%2FproxyIP%3Dproxyip.fxxk.dedyn.io#CT
+vless://90cd4a77-141a-43c9-991b-08263cfe9c10@192.65.217.18:443?encryption=none&security=tls&sni=vless1.naszx.xyz&fp=random&type=ws&host=vless1.naszx.xyz&path=%2FproxyIP%3Dproxyip.fxxk.dedyn.io#CT
+vless://90cd4a77-141a-43c9-991b-08263cfe9c10@103.169.142.232:443?encryption=none&security=tls&sni=vless1.naszx.xyz&fp=random&type=ws&host=vless1.naszx.xyz&path=%2FproxyIP%3Dproxyip.fxxk.dedyn.io#CT
+vless://90cd4a77-141a-43c9-991b-08263cfe9c10@194.36.55.195:443?encryption=none&security=tls&sni=vless1.naszx.xyz&fp=random&type=ws&host=vless1.naszx.xyz&path=%2FproxyIP%3Dproxyip.fxxk.dedyn.io#CMCC
+vless://90cd4a77-141a-43c9-991b-08263cfe9c10@164.38.155.70:443?encryption=none&security=tls&sni=vless1.naszx.xyz&fp=random&type=ws&host=vless1.naszx.xyz&path=%2FproxyIP%3Dproxyip.fxxk.dedyn.io#CMCC
+vless://90cd4a77-141a-43c9-991b-08263cfe9c10@62.106.70.89:40184?encryption=none&security=tls&sni=vless1.naszx.xyz&fp=random&type=ws&host=vless1.naszx.xyz&path=%2FproxyIP%3Dproxyip.jp.fxxk.dedyn.io#JP
 `
 
 //机场信息，可多个，也可为0
